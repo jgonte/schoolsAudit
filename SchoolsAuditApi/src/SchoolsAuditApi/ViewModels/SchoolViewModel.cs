@@ -1,3 +1,4 @@
+using System.ComponentModel.DataAnnotations;
 using SchoolsAuditDomainModel.Schools;
 using System;
 using System.Linq;
@@ -40,6 +41,8 @@ namespace SchoolsAudit.ViewModels
 
             public School.SchoolLevels? Level { get; set; }
 
+            [Required]
+            [StringLength(100)]
             public string Name { get; set; }
 
         #endregion

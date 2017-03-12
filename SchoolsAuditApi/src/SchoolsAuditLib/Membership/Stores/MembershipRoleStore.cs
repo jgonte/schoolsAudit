@@ -7,7 +7,7 @@ namespace SchoolsAuditDomainModel.Membership.Stores
 {
     public class MembershipRoleStore : RoleStore<Role, ApplicationDbContext, int, UserRole, RoleClaim>
     {
-        MembershipRoleStore(ApplicationDbContext context, IdentityErrorDescriber describer = null) : base(context, describer)
+        public MembershipRoleStore(ApplicationDbContext context, IdentityErrorDescriber describer = null) : base(context, describer)
         {
         }
 

@@ -7,7 +7,7 @@
 
   <Import Project="$(VSToolsPath)\DotNet\Microsoft.DotNet.Props" Condition="'$(VSToolsPath)' != ''" />
   <PropertyGroup Label="Globals">
-    <ProjectGuid>4a0933a8-2e62-44d7-88ec-c6614810cd2d</ProjectGuid>
+    <ProjectGuid>3c683da0-9e4c-4840-aeea-8973fc4c33aa</ProjectGuid>
     <RootNamespace>SchoolsAuditLib</RootNamespace>
     <BaseIntermediateOutputPath Condition="'$(BaseIntermediateOutputPath)'=='' ">.\obj</BaseIntermediateOutputPath>
     <OutputPath Condition="'$(OutputPath)'=='' ">.\bin\</OutputPath>

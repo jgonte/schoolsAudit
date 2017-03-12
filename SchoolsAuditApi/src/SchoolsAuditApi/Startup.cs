@@ -7,6 +7,7 @@ using Microsoft.Extensions.Logging;
 using SchoolsAudit.Repository;
 using SchoolsAuditDomainModel.Membership;
 using SchoolsAuditDomainModel.Persistence;
+using SchoolsAuditDomainModel.Membership.Stores;
 
 namespace SchoolsAudit
 {
@@ -37,6 +38,11 @@ namespace SchoolsAudit
                 .AllowAnyHeader()
                 .AllowAnyMethod()));
 
+            services.AddIdentity<User, Role>()
+                .AddUserStore<MembershipUserStore>()
+                .AddRoleStore<MembershipRoleStore>()
+                .AddDefaultTokenProviders();
+
             services.AddMvc();
         }
 
@@ -53,11 +59,13 @@ namespace SchoolsAudit
 
             app.UseCors("CorsDefault");
 
+            app.UseIdentity();
+
             app.UseIdentityServerAuthentication(new IdentityServerAuthenticationOptions
             {
                 Authority = "http://localhost:5000",
-                RequireHttpsMetadata  = false,
-                ApiName = "serviceLogApi"
+                RequireHttpsMetadata = false,
+                ApiName = "schoolsAuditApi"
             });
 
             app.UseMvc();

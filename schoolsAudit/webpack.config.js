@@ -10,7 +10,7 @@ var APP_DIR = path.resolve(__dirname, 'app');
 console.log('APP_DIR: ' + APP_DIR);
 
 var config = {
-  entry: APP_DIR + '/index.jsx',
+  entry: APP_DIR + '/app.jsx',
   output: {
     path: BUILD_DIR,
     filename: 'bundle.js',
@@ -20,7 +20,7 @@ var config = {
   devServer: {
   	contentBase: "./build",
     inline: true,
-  	port: 3333
+  	port: 5002
   },
   module: {
   	loaders: [

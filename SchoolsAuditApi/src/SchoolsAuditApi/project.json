@@ -23,9 +23,13 @@
         "Microsoft.EntityFrameworkCore.SqlServer": "1.1.0",
         "Microsoft.EntityFrameworkCore.Tools": "1.1.0-preview4-final",
         "Microsoft.EntityFrameworkCore.Design": "1.1.0",
+        "System.Security.Claims": "4.3.0",
+        "IdentityServer4": "1.0.2",
+        "IdentityServer4.AccessTokenValidation": "1.0.4",
+        "IdentityServer4.EntityFramework": "1.0.0",
+        "IdentityServer4.AspNetIdentity": "1.0.0",
         "SchoolsAuditLib": "1.0.0",
-        "Microsoft.AspNetCore.Cors": "1.1.0",
-        "IdentityServer4.AccessTokenValidation": "1.0.1-rc5"
+        "Microsoft.AspNetCore.Cors": "1.1.0"
     },
     "tools": 
     {
@@ -36,11 +40,10 @@
     {
         "netcoreapp1.1": 
         {
-            "imports":             [
+            "imports": [
                 "dotnet5.6",
                 "portable-net45+win8"
             ]
-
         }
     },
     "buildOptions": 
@@ -57,20 +60,18 @@
     },
     "publishOptions": 
     {
-        "include":         [
+        "include": [
             "wwwroot",
             "Views",
             "**/*.cshtml",
             "appsettings.json",
             "web.config"
         ]
-
     },
     "scripts": 
     {
-        "postpublish":         [
+        "postpublish": [
             "dotnet publish-iis --publish-folder %publish:OutputPath% --framework %publish:FullTargetFramework%"
         ]
-
     }
 }

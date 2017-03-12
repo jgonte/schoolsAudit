@@ -3,11 +3,11 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 14
 VisualStudioVersion = 14.0.25420.1
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{8BB2217D-0F2D-49D1-97BC-3654ED321F3B}") = "SchoolsAuditApi", "src\SchoolsAuditApi\SchoolsAuditApi.xproj", "{F6EF3ACE-E8C1-41AC-8F12-90BC27688969}"
+Project("{8BB2217D-0F2D-49D1-97BC-3654ED321F3B}") = "SchoolsAuditLib", "src\SchoolsAuditLib\SchoolsAuditLib.xproj", "{3C683DA0-9E4C-4840-AEEA-8973FC4C33AA}"
 EndProject
-Project("{8BB2217D-0F2D-49D1-97BC-3654ED321F3B}") = "SchoolsAuditLib", "src\SchoolsAuditLib\SchoolsAuditLib.xproj", "{4A0933A8-2E62-44D7-88EC-C6614810CD2D}"
+Project("{8BB2217D-0F2D-49D1-97BC-3654ED321F3B}") = "SchoolsAuditApi", "src\SchoolsAuditApi\SchoolsAuditApi.xproj", "{9E7C758B-B182-4023-BA8A-6FD54C8D3C09}"
 EndProject
-Project("{8BB2217D-0F2D-49D1-97BC-3654ED321F3B}") = "SchoolsAuditIdentityServer", "src\SchoolsAuditIdentityServer\SchoolsAuditIdentityServer.xproj", "{E51F8167-29D1-48B1-90F8-EC7D6EF8FEF6}"
+Project("{8BB2217D-0F2D-49D1-97BC-3654ED321F3B}") = "SchoolsAuditIdentityServer", "src\SchoolsAuditIdentityServer\SchoolsAuditIdentityServer.xproj", "{7BA6522C-9EE8-401A-A80A-50230B83A6F4}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,18 +15,18 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{F6EF3ACE-E8C1-41AC-8F12-90BC27688969}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{F6EF3ACE-E8C1-41AC-8F12-90BC27688969}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{F6EF3ACE-E8C1-41AC-8F12-90BC27688969}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{F6EF3ACE-E8C1-41AC-8F12-90BC27688969}.Release|Any CPU.Build.0 = Release|Any CPU
-		{4A0933A8-2E62-44D7-88EC-C6614810CD2D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{4A0933A8-2E62-44D7-88EC-C6614810CD2D}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{4A0933A8-2E62-44D7-88EC-C6614810CD2D}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{4A0933A8-2E62-44D7-88EC-C6614810CD2D}.Release|Any CPU.Build.0 = Release|Any CPU
-		{E51F8167-29D1-48B1-90F8-EC7D6EF8FEF6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{E51F8167-29D1-48B1-90F8-EC7D6EF8FEF6}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{E51F8167-29D1-48B1-90F8-EC7D6EF8FEF6}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{E51F8167-29D1-48B1-90F8-EC7D6EF8FEF6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3C683DA0-9E4C-4840-AEEA-8973FC4C33AA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3C683DA0-9E4C-4840-AEEA-8973FC4C33AA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3C683DA0-9E4C-4840-AEEA-8973FC4C33AA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3C683DA0-9E4C-4840-AEEA-8973FC4C33AA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9E7C758B-B182-4023-BA8A-6FD54C8D3C09}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9E7C758B-B182-4023-BA8A-6FD54C8D3C09}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9E7C758B-B182-4023-BA8A-6FD54C8D3C09}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9E7C758B-B182-4023-BA8A-6FD54C8D3C09}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7BA6522C-9EE8-401A-A80A-50230B83A6F4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7BA6522C-9EE8-401A-A80A-50230B83A6F4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7BA6522C-9EE8-401A-A80A-50230B83A6F4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7BA6522C-9EE8-401A-A80A-50230B83A6F4}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

@@ -5,9 +5,8 @@ using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Builder;
-using SchoolsAudit;
 
-namespace SchoolsAuditIdentityServer
+namespace SchoolsAudit
 {
     public class Program
     {
@@ -15,6 +14,7 @@ namespace SchoolsAuditIdentityServer
         {
             var host = new WebHostBuilder()
                 .UseKestrel()
+                .UseUrls("http://localhost:5000")
                 .UseContentRoot(Directory.GetCurrentDirectory())
                 .UseIISIntegration()
                 .UseStartup<Startup>()

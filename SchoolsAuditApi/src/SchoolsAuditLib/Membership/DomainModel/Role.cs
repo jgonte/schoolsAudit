@@ -7,5 +7,13 @@ namespace SchoolsAuditDomainModel.Membership
 {
     public class Role : IdentityRole<int, UserRole, RoleClaim>
     {
+        public Role()
+        {
+        }
+
+        public Role(string roleName) : base(roleName)
+        {
+        }
+
     }
 }

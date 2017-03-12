@@ -1,3 +1,4 @@
+using System.ComponentModel.DataAnnotations;
 using Microsoft.AspNetCore.Http;
 using SchoolsAuditDomainModel.Schools;
 using System;
@@ -38,6 +39,7 @@ namespace SchoolsAudit.ViewModels
 
             public int? Id { get; set; }
 
+            [StringLength(255)]
             public string Label { get; set; }
 
             public int? UserId { get; set; }

@@ -4,6 +4,7 @@ using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Logging;
+using Microsoft.AspNetCore.StaticFiles;
 using SchoolsAuditDomainModel.Membership;
 using SchoolsAuditDomainModel.Persistence;
 using SchoolsAuditDomainModel.Membership.Stores;
@@ -36,8 +37,9 @@ namespace SchoolsAudit
 
             services.AddIdentityServer()
                 .AddTemporarySigningCredential()
-                .AddInMemoryApiResources(ApiResources.GetApiResources())
-                .AddInMemoryClients(Clients.GetClients())
+                .AddInMemoryApiResources(Config.GetApiResources())
+                .AddInMemoryClients(Config.GetClients())
+                .AddInMemoryIdentityResources(Config.GetIdentityResources())
                 .AddAspNetIdentity<User>();
         }
 
@@ -56,7 +58,11 @@ namespace SchoolsAudit
 
             app.UseIdentityServer();
 
-            app.UseMvc();
+            UserSeeder.Seed(app.ApplicationServices);
+
+            app.UseStaticFiles();
+
+            app.UseMvcWithDefaultRoute();
         }
 
     }
